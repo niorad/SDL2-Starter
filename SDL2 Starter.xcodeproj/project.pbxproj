@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43069B9F1EBA3275001A19A7 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43069B9D1EBA3275001A19A7 /* Game.cpp */; };
+		438DE2F81EBA726F00738DED /* InputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438DE2F61EBA726F00738DED /* InputHandler.cpp */; };
 		43C21FCF1EBA2B3A003744F9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C21FCE1EBA2B3A003744F9 /* main.cpp */; };
 		43C21FDA1EBA2B85003744F9 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C21FD61EBA2B85003744F9 /* SDL2.framework */; };
 		43C21FDB1EBA2B85003744F9 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C21FD71EBA2B85003744F9 /* SDL2_ttf.framework */; };
@@ -30,6 +31,9 @@
 /* Begin PBXFileReference section */
 		43069B9C1EBA30F7001A19A7 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		43069B9D1EBA3275001A19A7 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		438DE2F61EBA726F00738DED /* InputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputHandler.cpp; sourceTree = "<group>"; };
+		438DE2F71EBA726F00738DED /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		438DE2F91EBA79B900738DED /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
 		43C21FCB1EBA2B3A003744F9 /* SDL2 Starter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SDL2 Starter"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C21FCE1EBA2B3A003744F9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		43C21FD61EBA2B85003744F9 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
@@ -76,6 +80,9 @@
 				43C21FCE1EBA2B3A003744F9 /* main.cpp */,
 				43069B9C1EBA30F7001A19A7 /* Game.h */,
 				43069B9D1EBA3275001A19A7 /* Game.cpp */,
+				438DE2F61EBA726F00738DED /* InputHandler.cpp */,
+				438DE2F71EBA726F00738DED /* InputHandler.h */,
+				438DE2F91EBA79B900738DED /* Vector2D.h */,
 			);
 			path = "SDL2 Starter";
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43C21FCF1EBA2B3A003744F9 /* main.cpp in Sources */,
+				438DE2F81EBA726F00738DED /* InputHandler.cpp in Sources */,
 				43069B9F1EBA3275001A19A7 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

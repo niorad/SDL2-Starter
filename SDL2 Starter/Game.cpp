@@ -8,7 +8,8 @@
 
 #include "Game.h"
 
-Game* Game::instance= 0 ;
+
+Game* Game::instance = 0;
 
 bool Game::init(const char* title, int x, int y, int width, int height, int flags) {
     
@@ -51,6 +52,9 @@ bool Game::init(const char* title, int x, int y, int width, int height, int flag
         return false;
     }
     
+    _InputHandler::Instance()->init();
+    
+    running = true;
     return true;
 }
 
@@ -67,12 +71,7 @@ void Game::update() {
 }
 
 void Game::handleEvents() {
-    SDL_Event event;
-    while(SDL_PollEvent(&event)) {
-        if(event.type == SDL_QUIT) {
-            exit();
-        }
-    }
+    _InputHandler::Instance()->update();
 }
 
 void Game::clean() {

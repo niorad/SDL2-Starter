@@ -16,6 +16,7 @@
 #include <SDL2_image/SDL_image.h>
 #include <iostream>
 #include <string>
+#include "InputHandler.h"
 
 using namespace std;
 
