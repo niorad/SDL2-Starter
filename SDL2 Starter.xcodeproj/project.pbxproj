@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		43C21FCF1EBA2B3A003744F9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C21FCE1EBA2B3A003744F9 /* main.cpp */; };
+		43C21FDA1EBA2B85003744F9 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C21FD61EBA2B85003744F9 /* SDL2.framework */; };
+		43C21FDB1EBA2B85003744F9 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C21FD71EBA2B85003744F9 /* SDL2_ttf.framework */; };
+		43C21FDC1EBA2B85003744F9 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C21FD81EBA2B85003744F9 /* SDL2_mixer.framework */; };
+		43C21FDD1EBA2B85003744F9 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C21FD91EBA2B85003744F9 /* SDL2_image.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		43C21FCB1EBA2B3A003744F9 /* SDL2 Starter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SDL2 Starter"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C21FCE1EBA2B3A003744F9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		43C21FD61EBA2B85003744F9 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		43C21FD71EBA2B85003744F9 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		43C21FD81EBA2B85003744F9 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		43C21FD91EBA2B85003744F9 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C21FDA1EBA2B85003744F9 /* SDL2.framework in Frameworks */,
+				43C21FDB1EBA2B85003744F9 /* SDL2_ttf.framework in Frameworks */,
+				43C21FDC1EBA2B85003744F9 /* SDL2_mixer.framework in Frameworks */,
+				43C21FDD1EBA2B85003744F9 /* SDL2_image.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +55,7 @@
 			children = (
 				43C21FCD1EBA2B3A003744F9 /* SDL2 Starter */,
 				43C21FCC1EBA2B3A003744F9 /* Products */,
+				43C21FD51EBA2B85003744F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,17 @@
 				43C21FCE1EBA2B3A003744F9 /* main.cpp */,
 			);
 			path = "SDL2 Starter";
+			sourceTree = "<group>";
+		};
+		43C21FD51EBA2B85003744F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43C21FD61EBA2B85003744F9 /* SDL2.framework */,
+				43C21FD71EBA2B85003744F9 /* SDL2_ttf.framework */,
+				43C21FD81EBA2B85003744F9 /* SDL2_mixer.framework */,
+				43C21FD91EBA2B85003744F9 /* SDL2_image.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +240,11 @@
 		43C21FD31EBA2B3A003744F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +252,11 @@
 		43C21FD41EBA2B3A003744F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
