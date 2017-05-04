@@ -7,6 +7,7 @@
 //
 
 #include "Game.h"
+#include "TextureManager.h"
 
 
 Game* Game::instance = 0;
@@ -55,6 +56,9 @@ bool Game::init(const char* title, int x, int y, int width, int height, int flag
     _InputHandler::Instance()->init();
     
     running = true;
+    
+    _TextureManager::Instance()->load("assets/test.png", "test", _Game::Instance()->getRenderer());
+    
     return true;
 }
 
@@ -62,6 +66,10 @@ bool Game::init(const char* title, int x, int y, int width, int height, int flag
 void Game::render() {
 
     SDL_RenderClear(renderer);
+    
+    _TextureManager::Instance()->draw("test", 100, 100, 200, 128, 1, 0, _Game::Instance()->getRenderer());
+    _TextureManager::Instance()->drawFrame("test", 300, 300, 128, 128, 1, 0, 0, 0, _Game::Instance()->getRenderer());
+    
     SDL_RenderPresent(renderer);
 
 }

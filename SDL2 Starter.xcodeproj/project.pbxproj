@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		43069B9F1EBA3275001A19A7 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43069B9D1EBA3275001A19A7 /* Game.cpp */; };
 		438DE2F81EBA726F00738DED /* InputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438DE2F61EBA726F00738DED /* InputHandler.cpp */; };
+		4398F7E61EBB5CF200001657 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4398F7E41EBB5CF200001657 /* TextureManager.cpp */; };
+		4398F7EB1EBB762200001657 /* assets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4398F7EA1EBB760D00001657 /* assets */; };
 		43C21FCF1EBA2B3A003744F9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C21FCE1EBA2B3A003744F9 /* main.cpp */; };
 		43C21FDA1EBA2B85003744F9 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C21FD61EBA2B85003744F9 /* SDL2.framework */; };
 		43C21FDB1EBA2B85003744F9 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C21FD71EBA2B85003744F9 /* SDL2_ttf.framework */; };
@@ -19,12 +21,13 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		43C21FC91EBA2B3A003744F9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				4398F7EB1EBB762200001657 /* assets in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -34,6 +37,9 @@
 		438DE2F61EBA726F00738DED /* InputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputHandler.cpp; sourceTree = "<group>"; };
 		438DE2F71EBA726F00738DED /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		438DE2F91EBA79B900738DED /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
+		4398F7E41EBB5CF200001657 /* TextureManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
+		4398F7E51EBB5CF200001657 /* TextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
+		4398F7EA1EBB760D00001657 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		43C21FCB1EBA2B3A003744F9 /* SDL2 Starter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SDL2 Starter"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C21FCE1EBA2B3A003744F9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		43C21FD61EBA2B85003744F9 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
@@ -77,10 +83,13 @@
 		43C21FCD1EBA2B3A003744F9 /* SDL2 Starter */ = {
 			isa = PBXGroup;
 			children = (
+				4398F7EA1EBB760D00001657 /* assets */,
 				43C21FCE1EBA2B3A003744F9 /* main.cpp */,
 				43069B9C1EBA30F7001A19A7 /* Game.h */,
 				43069B9D1EBA3275001A19A7 /* Game.cpp */,
 				438DE2F61EBA726F00738DED /* InputHandler.cpp */,
+				4398F7E41EBB5CF200001657 /* TextureManager.cpp */,
+				4398F7E51EBB5CF200001657 /* TextureManager.h */,
 				438DE2F71EBA726F00738DED /* InputHandler.h */,
 				438DE2F91EBA79B900738DED /* Vector2D.h */,
 			);
@@ -158,6 +167,7 @@
 				43C21FCF1EBA2B3A003744F9 /* main.cpp in Sources */,
 				438DE2F81EBA726F00738DED /* InputHandler.cpp in Sources */,
 				43069B9F1EBA3275001A19A7 /* Game.cpp in Sources */,
+				4398F7E61EBB5CF200001657 /* TextureManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
