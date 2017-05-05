@@ -8,6 +8,7 @@
 
 #include "Game.h"
 #include "TextureManager.h"
+#include "MenuState.h"
 
 
 Game* Game::instance = 0;
@@ -56,6 +57,9 @@ bool Game::init(const char* title, int x, int y, int width, int height, int flag
     _InputHandler::Instance()->init();
     
     running = true;
+
+    gameStateMachine = new GameStateMachine();
+    gameStateMachine->pushState(new MenuState());
     
     _TextureManager::Instance()->load("assets/test.png", "test", _Game::Instance()->getRenderer());
     
@@ -66,16 +70,25 @@ bool Game::init(const char* title, int x, int y, int width, int height, int flag
 void Game::render() {
 
     SDL_RenderClear(renderer);
-    
-    _TextureManager::Instance()->draw("test", 100, 100, 200, 128, 1, 0, _Game::Instance()->getRenderer());
-    _TextureManager::Instance()->drawFrame("test", 300, 300, 128, 128, 1, 0, 0, 0, _Game::Instance()->getRenderer());
-    
+
+    gameStateMachine->render();
+
+//    _TextureManager::Instance()->draw("test",
+//                                      _InputHandler::Instance()->getMousePos()->getX(),
+//                                      _InputHandler::Instance()->getMousePos()->getY(),
+//                                      200,
+//                                      128,
+//                                      1,
+//                                      0,
+//                                      _Game::Instance()->getRenderer());
+//    _TextureManager::Instance()->drawFrame("test", 300, 300, 128, 128, 1, 0, 0, 0, _Game::Instance()->getRenderer());
+
     SDL_RenderPresent(renderer);
 
 }
 
 void Game::update() {
-    
+    gameStateMachine->update();
 }
 
 void Game::handleEvents() {

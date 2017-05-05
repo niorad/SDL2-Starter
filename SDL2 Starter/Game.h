@@ -17,6 +17,7 @@
 #include <iostream>
 #include <string>
 #include "InputHandler.h"
+#include "GameStateMachine.h"
 
 using namespace std;
 
@@ -54,6 +55,8 @@ public:
         return window;
     }
 
+    GameStateMachine* getStateMachine() { return gameStateMachine; }
+
 
 private:
     
@@ -64,6 +67,8 @@ private:
 
     SDL_Window* window;
     SDL_Renderer* renderer;
+
+    GameStateMachine* gameStateMachine;
     
     bool running;
 

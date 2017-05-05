@@ -63,6 +63,8 @@ void InputHandler::onMouseButtonDown(SDL_Event& e) {
         mouseButtonStates[RIGHT] = true;
         cout << "Right Mouse Button Pressed" << endl;
     }
+    _Game::Instance()->getStateMachine()->onMouseButtonDown(e);
+
 }
 
 void InputHandler::onMouseButtonUp(SDL_Event& e) {
@@ -76,13 +78,17 @@ void InputHandler::onMouseButtonUp(SDL_Event& e) {
         mouseButtonStates[RIGHT] = false;
         cout << "Right Mouse Button Released" << endl;
     }
+    _Game::Instance()->getStateMachine()->onMouseButtonUp(e);
 }
+
 
 void InputHandler::onMouseMove(SDL_Event& e) {
     mPos->setX(e.motion.x);
     mPos->setY(e.motion.y);
     cout << "MouseX: " << mPos->getX() << ", MouseY: " << mPos->getY() << endl;
+    _Game::Instance()->getStateMachine()->onMouseMove(e);
 }
+
 
 void InputHandler::reset() {
     for(int i = 0; i< mouseButtonStates.size(); i++) {
@@ -94,11 +100,15 @@ void InputHandler::reset() {
 
 void InputHandler::onKeyDown(SDL_Event* event) {
     cout << "Key pressed: " << SDL_GetKeyName(event->key.keysym.sym) << endl;
+    _Game::Instance()->getStateMachine()->onKeyDown(event);
 }
+
 
 void InputHandler::onKeyUp(SDL_Event* event) {
     cout << "Key Released: " << SDL_GetKeyName(event->key.keysym.sym) << endl;
+    _Game::Instance()->getStateMachine()->onKeyUp(event);
 }
+
 
 bool InputHandler::isKeyDown(SDL_Scancode key) {
 
@@ -111,6 +121,7 @@ bool InputHandler::isKeyDown(SDL_Scancode key) {
     }
     return false;
 }
+
 
 void InputHandler::clean() {
     
