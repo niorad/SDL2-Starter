@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		43069B9F1EBA3275001A19A7 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43069B9D1EBA3275001A19A7 /* Game.cpp */; };
+		43338BB51EBD1C0800C7311F /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43338BB41EBD1C0800C7311F /* GameObject.cpp */; };
+		437F4AA41EBE6D68008929F2 /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 437F4AA21EBE6D68008929F2 /* Button.cpp */; };
+		437F4AA71EBE72A4008929F2 /* PlayState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 437F4AA51EBE72A4008929F2 /* PlayState.cpp */; };
 		438DE2F81EBA726F00738DED /* InputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438DE2F61EBA726F00738DED /* InputHandler.cpp */; };
 		4398F7E61EBB5CF200001657 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4398F7E41EBB5CF200001657 /* TextureManager.cpp */; };
 		4398F7EB1EBB762200001657 /* assets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4398F7EA1EBB760D00001657 /* assets */; };
@@ -37,6 +40,12 @@
 /* Begin PBXFileReference section */
 		43069B9C1EBA30F7001A19A7 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		43069B9D1EBA3275001A19A7 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		43338BB31EBD187A00C7311F /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		43338BB41EBD1C0800C7311F /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		437F4AA21EBE6D68008929F2 /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
+		437F4AA31EBE6D68008929F2 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		437F4AA51EBE72A4008929F2 /* PlayState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayState.cpp; sourceTree = "<group>"; };
+		437F4AA61EBE72A4008929F2 /* PlayState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayState.h; sourceTree = "<group>"; };
 		438DE2F61EBA726F00738DED /* InputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputHandler.cpp; sourceTree = "<group>"; };
 		438DE2F71EBA726F00738DED /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		438DE2F91EBA79B900738DED /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
@@ -101,8 +110,14 @@
 				43E242C81EBBD0EE0031AD9C /* GameStateMachine.h */,
 				43E242C91EBBD25D0031AD9C /* GameStateMachine.cpp */,
 				43B7FDF11EBCCE1000D80E27 /* MenuState.cpp */,
+				437F4AA21EBE6D68008929F2 /* Button.cpp */,
+				437F4AA51EBE72A4008929F2 /* PlayState.cpp */,
+				437F4AA61EBE72A4008929F2 /* PlayState.h */,
+				437F4AA31EBE6D68008929F2 /* Button.h */,
 				43B7FDF21EBCCE1000D80E27 /* MenuState.h */,
 				438DE2F61EBA726F00738DED /* InputHandler.cpp */,
+				43338BB31EBD187A00C7311F /* GameObject.h */,
+				43338BB41EBD1C0800C7311F /* GameObject.cpp */,
 				438DE2F71EBA726F00738DED /* InputHandler.h */,
 				4398F7E41EBB5CF200001657 /* TextureManager.cpp */,
 				4398F7E51EBB5CF200001657 /* TextureManager.h */,
@@ -179,10 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43338BB51EBD1C0800C7311F /* GameObject.cpp in Sources */,
+				437F4AA71EBE72A4008929F2 /* PlayState.cpp in Sources */,
 				43C21FCF1EBA2B3A003744F9 /* main.cpp in Sources */,
 				43E242C71EBBCF140031AD9C /* GameState.cpp in Sources */,
 				438DE2F81EBA726F00738DED /* InputHandler.cpp in Sources */,
 				43E242CA1EBBD25D0031AD9C /* GameStateMachine.cpp in Sources */,
+				437F4AA41EBE6D68008929F2 /* Button.cpp in Sources */,
 				43069B9F1EBA3275001A19A7 /* Game.cpp in Sources */,
 				4398F7E61EBB5CF200001657 /* TextureManager.cpp in Sources */,
 				43B7FDF31EBCCE1000D80E27 /* MenuState.cpp in Sources */,

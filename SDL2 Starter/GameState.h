@@ -13,6 +13,8 @@
 #include <stdio.h>
 #include <string>
 #include <SDL2/SDL.h>
+#include "GameObject.h"
+#include <map>
 
 using namespace std;
 
@@ -29,12 +31,14 @@ public:
     virtual void onMouseButtonDown(SDL_Event& e) = 0;
     virtual void onMouseMove(SDL_Event& e) = 0;
     virtual string getStateID() const = 0;
+    GameObject* getObjectByID(string id) { return gameObjects[id]; }
 
 protected:
 
-
+    map<string, GameObject*> gameObjects;
 };
 
+typedef map<string, GameObject*>::iterator it_type;
 
 
 

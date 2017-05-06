@@ -1,42 +1,39 @@
 //
-//  MenuState.hpp
+//  PlayState.hpp
 //  SDL2 Starter
 //
-//  Created by Antonio Radovcic on 05.05.17.
+//  Created by Antonio Radovcic on 06.05.17.
 //  Copyright © 2017 niorad. All rights reserved.
 //
 
-#ifndef MenuState_hpp
-#define MenuState_hpp
+#ifndef PlayState_hpp
+#define PlayState_hpp
+#pragma once
 
+#include <stdio.h>
 #include "GameState.h"
-#include "TextureManager.h"
 #include <string>
 
-class MenuState : public GameState {
+
+class PlayState : public GameState {
 
 public:
-
-    virtual void update();
+    void update();
     virtual void render();
-
     virtual bool onEnter();
     virtual bool onExit();
-
     virtual void onKeyDown(SDL_Event* e);
     virtual void onKeyUp(SDL_Event* e);
     virtual void onMouseButtonUp(SDL_Event& e);
     virtual void onMouseButtonDown(SDL_Event& e);
     virtual void onMouseMove(SDL_Event& e);
+    virtual string getStateID() const { return playID; }
 
-    virtual string getStateID() const { return menuID; }
-
-    
 private:
-    static const string menuID;
+
+    static const string playID;
 
 };
 
 
-
-#endif /* MenuState_h */
+#endif /* PlayState_hpp */

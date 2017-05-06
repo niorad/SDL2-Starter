@@ -61,7 +61,6 @@ bool Game::init(const char* title, int x, int y, int width, int height, int flag
     gameStateMachine = new GameStateMachine();
     gameStateMachine->pushState(new MenuState());
     
-    _TextureManager::Instance()->load("assets/test.png", "test", _Game::Instance()->getRenderer());
     
     return true;
 }
@@ -72,16 +71,6 @@ void Game::render() {
     SDL_RenderClear(renderer);
 
     gameStateMachine->render();
-
-//    _TextureManager::Instance()->draw("test",
-//                                      _InputHandler::Instance()->getMousePos()->getX(),
-//                                      _InputHandler::Instance()->getMousePos()->getY(),
-//                                      200,
-//                                      128,
-//                                      1,
-//                                      0,
-//                                      _Game::Instance()->getRenderer());
-//    _TextureManager::Instance()->drawFrame("test", 300, 300, 128, 128, 1, 0, 0, 0, _Game::Instance()->getRenderer());
 
     SDL_RenderPresent(renderer);
 
